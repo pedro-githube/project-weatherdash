@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="https://i.pinimg.com/originals/a5/76/c0/a576c06f9d614a6559493014cf1ac6f7.png">
+
+  <title>WeatherDash</title>
+</head>
+
+<body id="body-pd">
+  <header class="header col-12" id="header">
+    <div class="header__toggle">
+      <!--Menu de alternância-->
+      <i class='bx bx-menu' id="header-toggle"></i>
+      <!--Ícone do Menu no Header-->
+    </div>
+
+    <div class="container-fluid">
+      <div class="col-10 col-md-6 col-xl-6 mx-auto mt-3">
+        <div class="input-group mb-3">
+          <input type="text" class=" cidade form-control" placeholder="Nome da Cidade" aria-label="Nome da Cidade"
+            aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="buscar btn btn-outline-secondary" type="button" id="button-addon2">
+              <i class='bx bx-search'></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__img">
+      <!--Ícone do Sol no Header-->
+      <img src="https://i.pinimg.com/originals/a5/76/c0/a576c06f9d614a6559493014cf1ac6f7.png" alt="icon-weather-dash">
+    </div>
+  </header>
+
+  <div class="l-navbar" id="nav-bar">
+    <!--Menu de Navegação (Nav) Lateral-->
+    <nav class="nav">
+      <div>
+        <p class="nav__logo">
+          <!--Link de referência no logo-->
+          <i class='bx bx-cloud nav__logo-icon'></i>
+          <!--Ícone do Nav-->
+          <span class="nav__logo-name">WeatherDash</span>
+          <!--Nome do logo do nav-->
+        </p>
+
+        <div class="nav__list">
+          <!--Lista do menu de navegação-->
+          <a href="#" class="home nav__link active">
+            <!---->
+            <i class=' bx bx-home nav__icon'></i>
+            <span class="nav__name">Home</span>
+          </a>
+
+          <a href="#" class="dash nav__link">
+            <i class='bx bx-bar-chart-alt-2 nav__icon'></i>
+            <span class="nav__name">Dashboards</span>
+          </a>
+          <a href="#" class="t nav__link">
+            <i class='bx bxs-thermometer nav__icon'></i>
+            <span class="nav__name">Temperatura Média</span>
+          </a>
+
+          
+          <a href="#" class="nav__link" >
+            <input type="checkbox" id="switch">
+            <label for="switch">
+            <i class='bx bx-sun nav__icon_tema'></i>
+          </label>
+            <label for="switch">
+        <span class="nav__name" id="tema">Tema</span>
+          </label>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--MAIN/////////////////////////////////////////////////////////-->
+  <aside class="homePage"></aside>
+
+
+
+
+
+  <main class="conteudo">
+
+    <div id="dia" class="container-fluid col-12">
+      <div class="card col-12 col-md-6">
+      </div>
+    </div>
+
+    <div id="colunas" class="container col-md-6 col-xl-12">
+      <div class="mx-auto row">
+
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+
+        </div>
+
+        <div id="diaSem" class="col-4 col-md-1 col-xl-1">
+        </div>
+
+      </div>
+    </div>
+
+    <div id="graficos" class="container-fluid">
+      <div class="grafico row">
+      </div>
+    </div>
+
+    <div class="por-nascer">
+      <div class="sol">
+        <div class="nascer_por"></div>
+
+      </div>
+      <div class="lua">
+        <div class="nascer_por_lua"></div>
+      </div>
+
+      <div id="graficos">
+        <div class="graficoUmid">
+
+        </div>
+      </div>
+
+      <div class="grafico1 row">
+
+      </div>
+    </div>
+    
+    <div class="graficos-side_bar"></div>
+
+
+
+    </div>
+    </div>
+
+  </main>
+  <footer class="footers">
+    <div class="footer-content">
+      <h3>Squad3</h3>
+      <p>O Squad 3 apresenta um trabalho de JavaScript envolvendo consumo de API.</p>
+      <ul class="socials">
+        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+        <li><a href="#"><i class='bx bxl-linkedin'></i></i></a></li>
+        <li><a href="https://github.com/SENAI115/e-115-2021-1-2dn/tree/T2/Squad-3" target="_blank"><i
+              class='bx bxl-github'></i></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter'></i></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2021 WeatherDash. designed by <span>Team WeatherDash</span></p>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
