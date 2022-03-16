@@ -124,6 +124,7 @@ a {
 }
 
 .btn-outline-secondary {
+    margin-left: 12px; 
     background-color: var(--btn-color);
     color: var(--body-color);
 }
@@ -486,6 +487,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 200px;
 }
 
 .tituloH {

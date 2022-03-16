@@ -334,7 +334,7 @@ function canvasMain(horaH, valorH, valorH1, umidadeHora, ventHora) {
     });
 
 
-    var ctxUmid = document.getElementById('chartUmid').getContext('2d');
+  /*  var ctxUmid = document.getElementById('chartUmid').getContext('2d');
     var myChart = new Chart(ctxUmid, {
         type: 'polarArea',
         data: {
@@ -356,7 +356,7 @@ function canvasMain(horaH, valorH, valorH1, umidadeHora, ventHora) {
             }
         }
 
-    });
+    }); */
     var ctxVent = document.getElementById('myChart2').getContext('2d');
     var myChart = new Chart(ctxVent, {
         type: 'bar',
