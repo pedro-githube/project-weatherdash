@@ -85,7 +85,7 @@ function set_info_dia_atual() {
 
 set_info_dia_atual();
 
-const bt = document.querySelector('.buscar');
+const bt = document.querySelector('#button-addon2');
 const buscar = document.querySelector('.cidade');
 var cidade_nome_dia = document.querySelector('#nome');
 var imagem = document.querySelector('.image');
@@ -123,13 +123,16 @@ set_info_dia_semana();
 
 
 homepage()
-buscar.addEventListener('keypress', setBuscar);
+buscar.addEventListener('keypress', () => {
+    if (evt.keyCode == 13) {
+        setBuscar()
+    }
+});
 bt.addEventListener('click', setBuscar);
 var zerar = 0;
 
 function setBuscar(evt) {
-    
-    if (evt.keyCode == 13) {
+
         var homePage = document.querySelector('.homePage')
         var conteudo = document.querySelector('.conteudo')
         var footer = document.querySelector('.footers')
@@ -142,7 +145,6 @@ function setBuscar(evt) {
         pegarResults(buscar.value);
         pegarResults(bt.value);
         xiro();
-    }
 }
 
 function xiro() {
