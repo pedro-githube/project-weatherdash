@@ -26,6 +26,10 @@ The objective of the project was to consume the weather API and present the data
 ## Deploy
 - Frontend : Netlify
 
+# How execute the project 
+
+Visual Studio Code -> Extensions -> **Live Server**
+
 # Authors
 
 ![114796529-9a3fd900-9d67-11eb-8af6-eda90472e428](https://user-images.githubusercontent.com/91923421/158506578-db6f1393-dce5-43a5-aa0d-d916755b148f.png)
