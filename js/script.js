@@ -85,6 +85,7 @@ function set_info_dia_atual() {
 
 set_info_dia_atual();
 
+const bt = document.querySelector('.buscar');
 const buscar = document.querySelector('.cidade');
 var cidade_nome_dia = document.querySelector('#nome');
 var imagem = document.querySelector('.image');
@@ -123,6 +124,7 @@ set_info_dia_semana();
 
 homepage()
 buscar.addEventListener('keypress', setBuscar);
+bt.addEventListener('click', setBuscar);
 var zerar = 0;
 
 function setBuscar(evt) {
@@ -138,6 +140,7 @@ function setBuscar(evt) {
          
        
         pegarResults(buscar.value);
+        pegarResults(bt.value);
         xiro();
     }
 }
@@ -184,6 +187,7 @@ function displayResults(weather) {
     desc.textContent = `${descValue}`;
     temp.textContent = `Temperatura ${tempValue}°C`
     buscar.value = "";
+    bt.value = "";
 
     pegar_Lat_Lon(latValue, lonValue);
     pegar_Lat_Lon_Graficos(latValue, lonValue);
